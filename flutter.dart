@@ -100,7 +100,7 @@ Insert data
   }
 
 
-Future<void> _readFirestoreData(String id) async {
+Future<void> _readFirestoreData() async {
     final docRef = db.collection("cities").doc("SF");
     docRef.get().then(
       (DocumentSnapshot doc) {
